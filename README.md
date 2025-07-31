@@ -80,4 +80,10 @@ Add animations using libraries like GSAP or AOS
 
 This project demonstrates not only my technical skills but also my passion for clean UI/UX, organized code, and meaningful digital products. It’s more than just a static site—it's a live showcase of my capabilities.
 
+# OUTPUT #
 
+<img width="1631" height="682" alt="Image" src="https://github.com/user-attachments/assets/a313fdfb-0cc0-4379-bbf6-8ac9472423ec" />
+<img width="1651" height="565" alt="Image" src="https://github.com/user-attachments/assets/6f3adca7-f3bb-4d1e-a667-2547fc708cfd" />
+<img width="1676" height="854" alt="Image" src="https://github.com/user-attachments/assets/a9adab58-6b88-4ac9-85ee-941eb86d03e1" />
+<img width="1691" height="630" alt="Image" src="https://github.com/user-attachments/assets/121b6608-07ef-4dcc-be5b-9689c5640ed2" />
+<img width="1743" height="905" alt="Image" src="https://github.com/user-attachments/assets/1c358f83-cd37-4a03-bd96-7379f399f545" />
