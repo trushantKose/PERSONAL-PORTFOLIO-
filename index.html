@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7cea4a39cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo"><span style="color: #3700ff">My</span>Portfolio</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact-Us</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>WEB DEVELOPER</p>
+          <h1>
+            Hi, I'm <span>Trushant</span> <br />
+            From India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="mypic.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate and creative Web Developer with a strong
+              interest in building responsive, user-friendly, and visually
+              appealing websites and applications. With a solid foundation in
+              HTML, CSS, JavaScript, and frameworks like React.js and Node.js, I
+              enjoy turning ideas into real-world solutions. I’m constantly
+              learning new technologies to improve my skills and stay up-to-date
+              with industry trends. I enjoy working on both frontend and
+              backend, which allows me to create complete and functional web
+              applications. My goal is to contribute to meaningful projects,
+              solve real-world problems, and grow as a developer.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development </span> <br />
+                  Languages: Html, Css, Javascript, Bootstrap, ReactJs.
+                </li>
+                <li>
+                  <span>Backend Development </span> <br />
+                  Nodejs, Express, MongoDB.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Internship</span> <br />Company Name: CodTech IT
+                  Solutions <br />
+                  Domain: Frontend Development
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>BSC-2022 </span> <br />Tai Golwalkar Mahavidyalaya
+                  Ramtek
+                </li>
+                <li>
+                  <span>Web Development</span> <br />Institution : Apna College
+                </li>
+                <li>
+                  <span> MCA-Pursuing </span> <br />Wainganga College Of
+                  Engineering and Management Nagpur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <div class="sub-title">My Services</div>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Web Design is the process of planning, conceptualizing, and
+              arranging content online. It focuses on both the aesthetics and
+              functionality of websites. A good web design ensures a
+              user-friendly experience, responsive layout, and consistent
+              branding. It involves a blend of creativity and technical skills,
+              using tools like HTML, CSS, and design software. Modern web design
+              also emphasizes mobile optimization, accessibility, and
+              performance.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              UI/UX Design focuses on enhancing user satisfaction by improving
+              the usability, accessibility, and overall interaction between
+              users and digital products. UI (User Interface) Design deals with
+              the visual elements like buttons, icons, and layouts, ensuring the
+              interface is attractive and consistent. UX (User Experience)
+              Design is about the overall journey of the user, making it smooth,
+              intuitive, and engaging. Together, UI/UX ensures that websites and
+              apps are not only functional but also delightful to use. It
+              combines user research, wireframing, prototyping, and usability
+              testing to create effective digital experiences.
+              <a href="#">Learn More</a>
+            </p>
+          </div>
+
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Full stack Web Development</h2>
+            <p>
+              Full Stack Web Development involves building both the frontend
+              (client-side) and backend (server-side) of web applications. A
+              Full Stack Developer works with technologies like HTML, CSS,
+              JavaScript, React (frontend), and Node.js, Express, MongoDB, or
+              SQL (backend). This role requires a strong understanding of
+              databases, APIs, server hosting, and responsive design. Full stack
+              developers can handle end-to-end development—from designing UI to
+              deploying applications. It enables the creation of complete,
+              scalable, and dynamic web solutions independently or in
+              collaboration with a team.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio  -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="REAL-TIME-CHAT-APPLICATION.png" alt="" class="" />
+            <div class="layer">
+              <h3>Real Time Chat Application</h3>
+              <p>
+                A real-time chat application that enables instant messaging
+                between users using WebSockets with Socket.io and Node.js. It
+                features user login, chat rooms, and live message updates with a
+                clean React-based UI.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="e-learning-UI.png" alt="" class="" />
+            <div class="layer">
+              <h3>E-learning UI</h3>
+              <p>
+                A modern and responsive E-learning UI designed to provide a
+                clean, user-friendly interface for students and instructors. It
+                features course listings, progress tracking, and intuitive
+                navigation using HTML, CSS, and JavaScript .
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="QUIZ-APPLICATION.png" alt="" class="" />
+            <div class="layer">
+              <h3>Quiz Application</h3>
+              <p>
+                A responsive Quiz Application that allows users to answer
+                multiple-choice questions and get instant feedback on their
+                scores. Built using HTML, CSS, and JavaScript (or React), it
+                includes timer functionality and dynamic question rendering.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-square-arrow-up-right"></i
+              >trushantkose6@example.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>7709318533</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://telegram.com/"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+            <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="copyright">
+      <p>copyright Made with Trushant <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <!-- logic for sidemenu -->
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <!-- logic for form submission -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwuMLNKTFzPoa17HdrCy0_CsZ7I9ZCP4onwJK7ZsbEQvmhnGy4evL2NyHTq5OPIiTrwqQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
